@@ -16,6 +16,7 @@ package org.codehaus.mojo.ideauidesigner;
  * limitations under the License.
  */
 
+import com.intellij.ant.Javac2;
 import org.apache.maven.plugin.AbstractMojo;
 import org.apache.maven.plugin.MojoExecutionException;
 import org.apache.maven.project.MavenProject;
@@ -26,7 +27,7 @@ import org.apache.tools.ant.BuildListener;
 import org.apache.tools.ant.BuildEvent;
 import org.apache.tools.ant.types.Path;
 
-import com.intellij.uiDesigner.ant.Javac2;
+
 
 import java.io.File;
 import java.util.Iterator;
@@ -157,7 +158,7 @@ public class Javac2Mojo
 
         classpath.createPathElement().setLocation( destDirectory );
 
-        getLog().debug( "created classpath:" + classpath );
+        getLog().info( "created classpath:" + classpath );
 
         task.setClasspath( classpath );
 
