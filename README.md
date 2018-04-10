@@ -1,12 +1,11 @@
 Introduction
 -----------
 
-
-This was originally a git clone of https://github.com/gshakhn/ideauidesigner-maven-plugin that was itself a clone of https://svn.codehaus.org/mojo/trunk/mojo/ideauidesigner-maven-plugin.
-
-I modified it to support IntelliJ 17.x
-
 All credit goes to original authors of the maven plugin and the install-intellij-libs.sh.
+
+And of course some credit goes to all authors who kept this plugin up-to-date.
+
+I forked this and made some changes to improve the usability (added required libraries, all-in-one script installer, added some more details on the installation process) 
 
 Changes
 -----
