@@ -56,11 +56,6 @@
       <artifactId>javac2</artifactId>
       <version>18.1</version>
     </dependency>
-    <!--<dependency>
-      <groupId>com.intellij</groupId>
-      <artifactId>forms_rt</artifactId>
-      <version>18.1</version>
-    </dependency>-->
     <dependency>
       <groupId>com.intellij</groupId>
       <artifactId>asm-all</artifactId>
