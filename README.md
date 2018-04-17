@@ -33,7 +33,7 @@ You may change the jar files in the libs folder to match your Intellij installat
 Run the sh script (I used Git Bash on Windows) which will install the 3 Intellij IDEA libraries into your local Maven repository and afterwards it will install the plugin
 
 To use the plugin in your maven project you need add the dependency
-```
+```xml
 <dependency>
     <groupId>com.intellij</groupId>
     <artifactId>forms_rt</artifactId>
@@ -41,7 +41,7 @@ To use the plugin in your maven project you need add the dependency
 </dependency>
 ```
 And add the plugin
-```
+```xml
 <plugin>
     <groupId>org.codehaus.mojo</groupId>
     <artifactId>ideauidesigner-maven-plugin</artifactId>
