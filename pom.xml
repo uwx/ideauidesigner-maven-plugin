@@ -78,4 +78,56 @@
     </dependency>
   </dependencies>
 
+  <build>
+      <plugins>
+
+          <plugin>
+              <groupId>org.apache.maven.plugins</groupId>
+              <artifactId>maven-source-plugin</artifactId>
+              <version>3.0.1</version>
+              <executions>
+                  <execution>
+                      <id>attach-sources</id>
+                      <goals>
+                          <goal>jar-no-fork</goal>
+                      </goals>
+                  </execution>
+              </executions>
+          </plugin>
+
+          <plugin>
+              <artifactId>maven-deploy-plugin</artifactId>
+              <version>2.8.1</version>
+              <configuration>
+                  <altDeploymentRepository>internal.repo::default::file://${project.build.directory}/mvn-repo
+                  </altDeploymentRepository>
+              </configuration>
+          </plugin>
+          <plugin>
+              <groupId>org.apache.maven.plugins</groupId>
+              <artifactId>maven-javadoc-plugin</artifactId>
+              <version>2.9</version>
+              <executions>
+                  <execution>
+                      <id>attach-javadocs</id>
+                      <goals>
+                          <goal>jar</goal>
+                      </goals>
+                      <configuration>
+                          <additionalparam>${javadoc.opts}</additionalparam>
+                          <quiet>true</quiet>
+                      </configuration>
+                  </execution>
+              </executions>
+          </plugin>
+          <plugin>
+              <groupId>org.apache.maven.plugins</groupId>
+              <artifactId>maven-site-plugin</artifactId>
+              <version>3.6</version>
+              <configuration>
+              </configuration>
+          </plugin>
+
+      </plugins>
+  </build>
 </project>
