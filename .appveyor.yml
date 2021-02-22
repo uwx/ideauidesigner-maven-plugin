@@ -104,7 +104,7 @@ after_deploy:
   - cmd: cd %USERPROFILE%\gh-pages
   - cmd: dir
   - git add -f .
-  - cmd: cmd /c %LASTDIR%\trycommit.bat
+  - cmd: cmd /c %LASTDIR%\.trycommit.cmd
   - git push origin gh-pages
 
 cache:
