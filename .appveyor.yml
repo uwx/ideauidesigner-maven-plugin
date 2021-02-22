@@ -72,9 +72,9 @@ build_script:
   # clean wipes stuff, site generates the site, deploy generates the repo
   # i think i can merge deploy into site so it doesn't have to run things twice?
   - cmd: mvn clean deploy site -B -Dmaven.test.skip=true
-  - cmd: mvn deploy:deploy-file -Durl=file://mvn-repo -Dfile="libs/javac2.jar" -DgroupId=com.intellij -DartifactId=javac2 -Dversion=18.1 -Dpackaging=jar
-  - cmd: mvn deploy:deploy-file -Durl=file://mvn-repo -Dfile="libs/asm-all.jar" -DgroupId=com.intellij -DartifactId=asm-all -Dversion=18.1 -Dpackaging=jar
-  - cmd: mvn deploy:deploy-file -Durl=file://mvn-repo -Dfile="libs/forms_rt.jar" -DgroupId=com.intellij -DartifactId=forms_rt -Dversion=18.1 -Dpackaging=jar
+  - cmd: mvn deploy:deploy-file -Durl=file://target/mvn-repo -Dfile="libs/javac2.jar" -DgroupId=com.intellij -DartifactId=javac2 -Dversion=18.1 -Dpackaging=jar
+  - cmd: mvn deploy:deploy-file -Durl=file://target/mvn-repo -Dfile="libs/asm-all.jar" -DgroupId=com.intellij -DartifactId=asm-all -Dversion=18.1 -Dpackaging=jar
+  - cmd: mvn deploy:deploy-file -Durl=file://target/mvn-repo -Dfile="libs/forms_rt.jar" -DgroupId=com.intellij -DartifactId=forms_rt -Dversion=18.1 -Dpackaging=jar
   #- mvn clean package -B -Dmaven.test.skip=true
 test_script:
   # Output useful info for debugging.
