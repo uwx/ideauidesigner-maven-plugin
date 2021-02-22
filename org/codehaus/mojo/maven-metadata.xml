@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <plugins>
+    <plugin>
+      <name>Maven IDEA UI Designer Plugin</name>
+      <prefix>ideauidesigner</prefix>
+      <artifactId>ideauidesigner-maven-plugin</artifactId>
+    </plugin>
+  </plugins>
+</metadata>

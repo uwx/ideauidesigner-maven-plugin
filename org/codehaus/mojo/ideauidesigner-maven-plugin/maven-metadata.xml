@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>org.codehaus.mojo</groupId>
+  <artifactId>ideauidesigner-maven-plugin</artifactId>
+  <versioning>
+    <latest>rev8</latest>
+    <release>rev8</release>
+    <versions>
+      <version>rev8</version>
+    </versions>
+    <lastUpdated>20210222054301</lastUpdated>
+  </versioning>
+</metadata>
