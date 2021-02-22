@@ -3,11 +3,11 @@
   <groupId>org.codehaus.mojo</groupId>
   <artifactId>ideauidesigner-maven-plugin</artifactId>
   <versioning>
-    <latest>rev9</latest>
-    <release>rev9</release>
+    <latest>rev10</latest>
+    <release>rev10</release>
     <versions>
-      <version>rev9</version>
+      <version>rev10</version>
     </versions>
-    <lastUpdated>20210222055159</lastUpdated>
+    <lastUpdated>20210222055615</lastUpdated>
   </versioning>
 </metadata>
