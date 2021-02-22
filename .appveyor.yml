@@ -96,7 +96,7 @@ after_deploy:
   - git clone --quiet --branch=gh-pages https://github.com/uwx/ideauidesigner-maven-plugin %USERPROFILE%\gh-pages
   # update the xml
   - cmd: set USERDIR=%USERPROFILE%\gh-pages
-  - node _testhash
+  #- node _testhash
   #
   - cmd: dir
   - cmd: cmd /c .copyfiles.cmd
