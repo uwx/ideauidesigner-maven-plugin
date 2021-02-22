@@ -138,6 +138,15 @@
               <artifactId>maven-site-plugin</artifactId>
               <version>3.6</version>
               <configuration>
+                <reportPlugins>
+                  <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-javadoc-plugin</artifactId>
+                    <configuration>
+                      <additionalparam>${javadoc.opts}</additionalparam>
+                    </configuration>
+                  </plugin>
+                </reportPlugins>
               </configuration>
           </plugin>
 
